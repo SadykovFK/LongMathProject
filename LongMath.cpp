@@ -209,8 +209,35 @@ bool LongNumber::operator>(const LongNumber& other) const
 
 void LongNumber::setPrecision(int newPrecision)
 {
+    if (newPrecision >= precision) {
+        precision = newPrecision;
+        return;
+    }
+    
+    int cutoffIndex = digits.size() - precision + newPrecision;
+    
+    if (cutoffIndex < digits.size() && cutoffIndex >= 0) {
+        int carry = (digits[cutoffIndex] >= 5) ? 1 : 0;
+        digits.resize(cutoffIndex);
+        
+        for (int i = cutoffIndex - 1; i >= 0 && carry > 0; --i) {
+            digits[i] += carry;
+            if (digits[i] == 10) {
+                digits[i] = 0;
+                carry = 1;
+            } else {
+                carry = 0;
+            }
+        }
+        
+        if (carry > 0) {
+            digits.insert(digits.begin(), 1);
+        }
+    }
+    
     precision = newPrecision;
 }
+
 
 LongNumber operator""_longnum(long double number)
 {

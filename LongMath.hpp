@@ -26,7 +26,7 @@ class LongNumber
 
         void setPrecision(int newPrecision);
 
-        friend LongNumber operator"" _longnum(long double number);
+        friend LongNumber operator""_longnum(long double number);
 
         std::string toString() const;
 
