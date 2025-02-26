@@ -1,11 +1,10 @@
-#include "LongMath.hpp"
+#include "LongMathBits.hpp"
 #include <iostream>
 
-int main(int argc, char* argv[]) {
+int main() {
 
-    int iterations = 10;
-    int precision = 1000;
-
+    int iterations = 100;
+    int precision = 400;
 
     LongNumber pi(0.0, precision);           
     LongNumber four(4.0, precision);         

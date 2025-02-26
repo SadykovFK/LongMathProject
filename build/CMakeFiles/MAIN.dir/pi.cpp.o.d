@@ -1,6 +1,6 @@
 CMakeFiles/MAIN.dir/pi.cpp.o: \
   /Users/augrossi/Documents/LongMathProject/pi.cpp \
-  /Users/augrossi/Documents/LongMathProject/LongMath.hpp \
+  /Users/augrossi/Documents/LongMathProject/LongMathVer1/LongMathBits.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/comp.h \
