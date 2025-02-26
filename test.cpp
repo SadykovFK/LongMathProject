@@ -2,7 +2,6 @@
 #include <string>
 #include "LongMathBits.hpp"
 
-
 bool checkResult(const LongNumber& actual, const std::string& expectedBinary)
 {
     return (actual.toString() == expectedBinary);
