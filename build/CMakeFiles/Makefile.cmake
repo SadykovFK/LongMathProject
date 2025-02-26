@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/Users/augrossi/Documents/LongMathProject/CMakeLists.txt"
+  "/Users/augrossi/Documents/LongMathProject/LongMathBits/CMakeLists.txt"
   "CMakeFiles/3.31.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeSystem.cmake"
@@ -52,9 +53,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "LongMathBits/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/MAIN.dir/DependInfo.cmake"
+  "CMakeFiles/pi.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
+  "LongMathBits/CMakeFiles/LongMathBits.dir/DependInfo.cmake"
   )

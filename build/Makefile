@@ -117,48 +117,50 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MAIN
+# Target rules for targets named pi
 
 # Build rule for target.
-MAIN: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MAIN
-.PHONY : MAIN
+pi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pi
+.PHONY : pi
 
 # fast build rule for target.
-MAIN/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/build
-.PHONY : MAIN/fast
+pi/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pi.dir/build.make CMakeFiles/pi.dir/build
+.PHONY : pi/fast
 
-LongMathVer1/LongMathBits.o: LongMathVer1/LongMathBits.cpp.o
-.PHONY : LongMathVer1/LongMathBits.o
+#=============================================================================
+# Target rules for targets named test
 
-# target to build an object file
-LongMathVer1/LongMathBits.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o
-.PHONY : LongMathVer1/LongMathBits.cpp.o
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
-LongMathVer1/LongMathBits.i: LongMathVer1/LongMathBits.cpp.i
-.PHONY : LongMathVer1/LongMathBits.i
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
-# target to preprocess a source file
-LongMathVer1/LongMathBits.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.i
-.PHONY : LongMathVer1/LongMathBits.cpp.i
+#=============================================================================
+# Target rules for targets named LongMathBits
 
-LongMathVer1/LongMathBits.s: LongMathVer1/LongMathBits.cpp.s
-.PHONY : LongMathVer1/LongMathBits.s
+# Build rule for target.
+LongMathBits: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LongMathBits
+.PHONY : LongMathBits
 
-# target to generate assembly for a file
-LongMathVer1/LongMathBits.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.s
-.PHONY : LongMathVer1/LongMathBits.cpp.s
+# fast build rule for target.
+LongMathBits/fast:
+	$(MAKE) $(MAKESILENT) -f LongMathBits/CMakeFiles/LongMathBits.dir/build.make LongMathBits/CMakeFiles/LongMathBits.dir/build
+.PHONY : LongMathBits/fast
 
 pi.o: pi.cpp.o
 .PHONY : pi.o
 
 # target to build an object file
 pi.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/pi.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pi.dir/build.make CMakeFiles/pi.dir/pi.cpp.o
 .PHONY : pi.cpp.o
 
 pi.i: pi.cpp.i
@@ -166,7 +168,7 @@ pi.i: pi.cpp.i
 
 # target to preprocess a source file
 pi.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/pi.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pi.dir/build.make CMakeFiles/pi.dir/pi.cpp.i
 .PHONY : pi.cpp.i
 
 pi.s: pi.cpp.s
@@ -174,8 +176,32 @@ pi.s: pi.cpp.s
 
 # target to generate assembly for a file
 pi.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/pi.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pi.dir/build.make CMakeFiles/pi.dir/pi.cpp.s
 .PHONY : pi.cpp.s
+
+test.o: test.cpp.o
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -185,13 +211,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MAIN"
-	@echo "... LongMathVer1/LongMathBits.o"
-	@echo "... LongMathVer1/LongMathBits.i"
-	@echo "... LongMathVer1/LongMathBits.s"
+	@echo "... LongMathBits"
+	@echo "... pi"
+	@echo "... test"
 	@echo "... pi.o"
 	@echo "... pi.i"
 	@echo "... pi.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

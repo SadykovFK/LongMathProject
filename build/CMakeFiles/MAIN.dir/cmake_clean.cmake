@@ -1,13 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o"
-  "CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o.d"
-  "CMakeFiles/MAIN.dir/pi.cpp.o"
-  "CMakeFiles/MAIN.dir/pi.cpp.o.d"
-  "MAIN"
-  "MAIN.pdb"
+  "CMakeFiles/main.dir/main.cpp.o"
+  "CMakeFiles/main.dir/main.cpp.o.d"
+  "main"
+  "main.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
 foreach(lang CXX)
-  include(CMakeFiles/MAIN.dir/cmake_clean_${lang}.cmake OPTIONAL)
+  include(CMakeFiles/main.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

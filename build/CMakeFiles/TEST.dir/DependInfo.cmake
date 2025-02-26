@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/augrossi/documents/LongMathProject/LongMathVer1/LongMathBits.cpp" "CMakeFiles/TEST.dir/LongMathVer1/LongMathBits.cpp.o" "gcc" "CMakeFiles/TEST.dir/LongMathVer1/LongMathBits.cpp.o.d"
-  "/Users/augrossi/documents/LongMathProject/test.cpp" "CMakeFiles/TEST.dir/test.cpp.o" "gcc" "CMakeFiles/TEST.dir/test.cpp.o.d"
+  "/Users/augrossi/Documents/LongMathProject/test.cpp" "CMakeFiles/test.dir/test.cpp.o" "gcc" "CMakeFiles/test.dir/test.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

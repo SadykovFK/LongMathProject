@@ -4,9 +4,9 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/augrossi/documents/LongMathProject/LongMathVer1
+CXX_INCLUDES = -I/Users/augrossi/Documents/LongMathProject/LongMathBits
 
-CXX_FLAGSarm64 = -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+CXX_FLAGSarm64 =  -O3 -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
 
-CXX_FLAGS = -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+CXX_FLAGS =  -O3 -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
 
