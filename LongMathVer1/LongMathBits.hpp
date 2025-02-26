@@ -23,10 +23,9 @@ public:
     bool operator<(const LongNumber& other) const;
     bool operator>(const LongNumber& other) const;
     bool operator>=(const LongNumber& other) const;
+    bool operator<=(const LongNumber& other) const;
 
     void setPrecision(int newPrecision);
-
-    friend LongNumber operator""_longnum(long double number);
 
     std::string toString() const;
 
@@ -36,7 +35,10 @@ private:
     bool isNegative;   
     void normalize();
     void alignPrecision(LongNumber& other);
+    friend void alignForComparison(LongNumber &a, LongNumber &b);
     LongNumber abs() const;
 };
+
+LongNumber operator""_longnum(long double number);
 
 #endif // LONGMATH_HPP

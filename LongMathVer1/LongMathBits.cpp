@@ -177,10 +177,17 @@ LongNumber LongNumber::operator*(const LongNumber& other) const {
         }
     }
 
-    result.isNegative = isNegative != other.isNegative;
+    result.isNegative = (isNegative != other.isNegative);
+    result.normalize();
+
+    if (result.digits.size() >= (size_t)precision)
+        result.digits.resize(result.digits.size() - precision);
+    result.precision = precision;
     result.normalize();
     return result;
 }
+
+
 
 LongNumber LongNumber::operator/(const LongNumber& other) const {
     if (other.digits.size() == 1 && other.digits[0] == '0') {
@@ -240,8 +247,37 @@ LongNumber LongNumber::operator/(const LongNumber& other) const {
 
 }
 
+void alignForComparison(LongNumber &a, LongNumber &b) {
+    
+    a.normalize();
+    b.normalize();
+    
+    int commonPrecision = std::max(a.precision, b.precision);
+    
+    if (a.precision < commonPrecision) {
+        a.digits.insert(a.digits.end(), commonPrecision - a.precision, '0');
+        a.precision = commonPrecision;
+    }
+    if (b.precision < commonPrecision) {
+        b.digits.insert(b.digits.end(), commonPrecision - b.precision, '0');
+        b.precision = commonPrecision;
+    }
+    size_t maxSize = std::max(a.digits.size(), b.digits.size());
+    while(a.digits.size() < maxSize)
+        a.digits.insert(a.digits.begin(), '0');
+    while(b.digits.size() < maxSize)
+        b.digits.insert(b.digits.begin(), '0');
+}
+
 bool LongNumber::operator==(const LongNumber& other) const {
-    return digits == other.digits && isNegative == other.isNegative;
+    if (this->isNegative != other.isNegative)
+        return false;
+    
+    LongNumber a = *this;
+    LongNumber b = other;
+    alignForComparison(a, b);
+    
+    return a.digits == b.digits;
 }
 
 bool LongNumber::operator!=(const LongNumber& other) const {
@@ -249,21 +285,31 @@ bool LongNumber::operator!=(const LongNumber& other) const {
 }
 
 bool LongNumber::operator<(const LongNumber& other) const {
-    if (isNegative != other.isNegative) return isNegative;
-    if (digits.size() != other.digits.size()) return digits.size() < other.digits.size();
-    for (size_t i = 0; i < digits.size(); ++i) {
-        if (digits[i] != other.digits[i]) return digits[i] < other.digits[i];
-    }
-    return false;
+    if (this->isNegative != other.isNegative)
+        return this->isNegative;
+    
+    LongNumber a = *this;
+    LongNumber b = other;
+    alignForComparison(a, b);
+    
+    if (!a.isNegative)
+        return a.digits < b.digits;
+    else
+        return a.digits > b.digits;
 }
 
 bool LongNumber::operator>(const LongNumber& other) const {
     return other < *this;
 }
 
+bool LongNumber::operator<=(const LongNumber& other) const {
+    return !(*this > other);
+}
+
 bool LongNumber::operator>=(const LongNumber& other) const {
     return !(*this < other);
 }
+
 
 void LongNumber::setPrecision(int newPrecision) {
     if (newPrecision >= precision) {
