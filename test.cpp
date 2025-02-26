@@ -3,11 +3,13 @@
 #include "LongMathBits.hpp"
 
 
-bool checkResult(const LongNumber& actual, const std::string& expectedBinary) {
+bool checkResult(const LongNumber& actual, const std::string& expectedBinary)
+{
     return (actual.toString() == expectedBinary);
 }
 
-void printVerdict(bool condition, const std::string& testName) {
+void printVerdict(bool condition, const std::string& testName)
+{
     std::cout << testName << ": " << (condition ? "OK" : "FAIL") << std::endl;
 }
 
