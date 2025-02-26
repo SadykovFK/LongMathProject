@@ -1,3 +1,3 @@
-/Users/augrossi/documents/LongMathProject/build/CMakeFiles/MAIN.dir
-/Users/augrossi/documents/LongMathProject/build/CMakeFiles/edit_cache.dir
-/Users/augrossi/documents/LongMathProject/build/CMakeFiles/rebuild_cache.dir
+/Users/augrossi/Documents/LongMathProject/build/CMakeFiles/MAIN.dir
+/Users/augrossi/Documents/LongMathProject/build/CMakeFiles/edit_cache.dir
+/Users/augrossi/Documents/LongMathProject/build/CMakeFiles/rebuild_cache.dir

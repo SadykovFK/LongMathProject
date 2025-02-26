@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/augrossi/documents/LongMathProject
+CMAKE_SOURCE_DIR = /Users/augrossi/Documents/LongMathProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/augrossi/documents/LongMathProject/build
+CMAKE_BINARY_DIR = /Users/augrossi/Documents/LongMathProject/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/augrossi/documents/LongMathProject/build/CMakeFiles /Users/augrossi/documents/LongMathProject/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/augrossi/Documents/LongMathProject/build/CMakeFiles /Users/augrossi/Documents/LongMathProject/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/augrossi/documents/LongMathProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/augrossi/Documents/LongMathProject/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,29 +153,29 @@ LongMathVer1/LongMathBits.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.s
 .PHONY : LongMathVer1/LongMathBits.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+pi.o: pi.cpp.o
+.PHONY : pi.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/main.cpp.o
-.PHONY : main.cpp.o
+pi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/pi.cpp.o
+.PHONY : pi.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+pi.i: pi.cpp.i
+.PHONY : pi.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/main.cpp.i
-.PHONY : main.cpp.i
+pi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/pi.cpp.i
+.PHONY : pi.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+pi.s: pi.cpp.s
+.PHONY : pi.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/main.cpp.s
-.PHONY : main.cpp.s
+pi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/pi.cpp.s
+.PHONY : pi.cpp.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo "... LongMathVer1/LongMathBits.o"
 	@echo "... LongMathVer1/LongMathBits.i"
 	@echo "... LongMathVer1/LongMathBits.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... pi.o"
+	@echo "... pi.i"
+	@echo "... pi.s"
 .PHONY : help
 
 

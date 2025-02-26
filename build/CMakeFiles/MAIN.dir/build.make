@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/augrossi/documents/LongMathProject
+CMAKE_SOURCE_DIR = /Users/augrossi/Documents/LongMathProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/augrossi/documents/LongMathProject/build
+CMAKE_BINARY_DIR = /Users/augrossi/Documents/LongMathProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MAIN.dir/depend.make
@@ -72,47 +72,47 @@ include CMakeFiles/MAIN.dir/flags.make
 CMakeFiles/MAIN.dir/codegen:
 .PHONY : CMakeFiles/MAIN.dir/codegen
 
-CMakeFiles/MAIN.dir/main.cpp.o: CMakeFiles/MAIN.dir/flags.make
-CMakeFiles/MAIN.dir/main.cpp.o: /Users/augrossi/documents/LongMathProject/main.cpp
-CMakeFiles/MAIN.dir/main.cpp.o: CMakeFiles/MAIN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/augrossi/documents/LongMathProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MAIN.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MAIN.dir/main.cpp.o -MF CMakeFiles/MAIN.dir/main.cpp.o.d -o CMakeFiles/MAIN.dir/main.cpp.o -c /Users/augrossi/documents/LongMathProject/main.cpp
+CMakeFiles/MAIN.dir/pi.cpp.o: CMakeFiles/MAIN.dir/flags.make
+CMakeFiles/MAIN.dir/pi.cpp.o: /Users/augrossi/Documents/LongMathProject/pi.cpp
+CMakeFiles/MAIN.dir/pi.cpp.o: CMakeFiles/MAIN.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/augrossi/Documents/LongMathProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MAIN.dir/pi.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MAIN.dir/pi.cpp.o -MF CMakeFiles/MAIN.dir/pi.cpp.o.d -o CMakeFiles/MAIN.dir/pi.cpp.o -c /Users/augrossi/Documents/LongMathProject/pi.cpp
 
-CMakeFiles/MAIN.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MAIN.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/augrossi/documents/LongMathProject/main.cpp > CMakeFiles/MAIN.dir/main.cpp.i
+CMakeFiles/MAIN.dir/pi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MAIN.dir/pi.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/augrossi/Documents/LongMathProject/pi.cpp > CMakeFiles/MAIN.dir/pi.cpp.i
 
-CMakeFiles/MAIN.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MAIN.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/augrossi/documents/LongMathProject/main.cpp -o CMakeFiles/MAIN.dir/main.cpp.s
+CMakeFiles/MAIN.dir/pi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MAIN.dir/pi.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/augrossi/Documents/LongMathProject/pi.cpp -o CMakeFiles/MAIN.dir/pi.cpp.s
 
 CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o: CMakeFiles/MAIN.dir/flags.make
-CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o: /Users/augrossi/documents/LongMathProject/LongMathVer1/LongMathBits.cpp
+CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o: /Users/augrossi/Documents/LongMathProject/LongMathVer1/LongMathBits.cpp
 CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o: CMakeFiles/MAIN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/augrossi/documents/LongMathProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o -MF CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o.d -o CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o -c /Users/augrossi/documents/LongMathProject/LongMathVer1/LongMathBits.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/augrossi/Documents/LongMathProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o -MF CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o.d -o CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o -c /Users/augrossi/Documents/LongMathProject/LongMathVer1/LongMathBits.cpp
 
 CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/augrossi/documents/LongMathProject/LongMathVer1/LongMathBits.cpp > CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/augrossi/Documents/LongMathProject/LongMathVer1/LongMathBits.cpp > CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.i
 
 CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/augrossi/documents/LongMathProject/LongMathVer1/LongMathBits.cpp -o CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/augrossi/Documents/LongMathProject/LongMathVer1/LongMathBits.cpp -o CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.s
 
 # Object files for target MAIN
 MAIN_OBJECTS = \
-"CMakeFiles/MAIN.dir/main.cpp.o" \
+"CMakeFiles/MAIN.dir/pi.cpp.o" \
 "CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o"
 
 # External object files for target MAIN
 MAIN_EXTERNAL_OBJECTS =
 
-MAIN: CMakeFiles/MAIN.dir/main.cpp.o
+MAIN: CMakeFiles/MAIN.dir/pi.cpp.o
 MAIN: CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o
 MAIN: CMakeFiles/MAIN.dir/build.make
 MAIN: CMakeFiles/MAIN.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/augrossi/documents/LongMathProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MAIN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/augrossi/Documents/LongMathProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MAIN"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MAIN.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +124,6 @@ CMakeFiles/MAIN.dir/clean:
 .PHONY : CMakeFiles/MAIN.dir/clean
 
 CMakeFiles/MAIN.dir/depend:
-	cd /Users/augrossi/documents/LongMathProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/augrossi/documents/LongMathProject /Users/augrossi/documents/LongMathProject /Users/augrossi/documents/LongMathProject/build /Users/augrossi/documents/LongMathProject/build /Users/augrossi/documents/LongMathProject/build/CMakeFiles/MAIN.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/augrossi/Documents/LongMathProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/augrossi/Documents/LongMathProject /Users/augrossi/Documents/LongMathProject /Users/augrossi/Documents/LongMathProject/build /Users/augrossi/Documents/LongMathProject/build /Users/augrossi/Documents/LongMathProject/build/CMakeFiles/MAIN.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/MAIN.dir/depend
 

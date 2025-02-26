@@ -1,4 +1,4 @@
-CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o: \
+CMakeFiles/-o.dir/LongMathVer1/LongMathBits.cpp.o: \
   /Users/augrossi/Documents/LongMathProject/LongMathVer1/LongMathBits.cpp \
   /Users/augrossi/Documents/LongMathProject/LongMathVer1/LongMathBits.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string \

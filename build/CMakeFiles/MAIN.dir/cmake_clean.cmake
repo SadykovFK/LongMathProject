@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o"
   "CMakeFiles/MAIN.dir/LongMathVer1/LongMathBits.cpp.o.d"
-  "CMakeFiles/MAIN.dir/main.cpp.o"
-  "CMakeFiles/MAIN.dir/main.cpp.o.d"
+  "CMakeFiles/MAIN.dir/pi.cpp.o"
+  "CMakeFiles/MAIN.dir/pi.cpp.o.d"
   "MAIN"
   "MAIN.pdb"
 )
