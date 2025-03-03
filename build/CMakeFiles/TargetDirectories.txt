@@ -1,7 +1,0 @@
-/Users/augrossi/Documents/LongMathProject/build/CMakeFiles/pi.dir
-/Users/augrossi/Documents/LongMathProject/build/CMakeFiles/test.dir
-/Users/augrossi/Documents/LongMathProject/build/CMakeFiles/edit_cache.dir
-/Users/augrossi/Documents/LongMathProject/build/CMakeFiles/rebuild_cache.dir
-/Users/augrossi/Documents/LongMathProject/build/LongMathBits/CMakeFiles/LongMathBits.dir
-/Users/augrossi/Documents/LongMathProject/build/LongMathBits/CMakeFiles/edit_cache.dir
-/Users/augrossi/Documents/LongMathProject/build/LongMathBits/CMakeFiles/rebuild_cache.dir
